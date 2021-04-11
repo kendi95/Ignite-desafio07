@@ -81,7 +81,7 @@ describe('checksCreateTodosUserAvailability', () => {
 
     checksCreateTodosUserAvailability(mockRequest, mockResponse, mockNext);
 
-    expect(mockResponse.status).toBeCalledWith(403);
+    expect(mockResponse.status).toBeCalledWith(404);
   });
 
   it('should be able to let user create infinite new todos when is in Pro plan', () => {
